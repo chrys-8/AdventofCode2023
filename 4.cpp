@@ -1,4 +1,4 @@
-/* # Advent of Code 2023 - Day 2
+/* # Advent of Code 2023 - Day 2 - Part 2
  *
  * Filter a collection of "games" by whether they would be possible
  * given a maximum number of coloured cubes in a bag.
