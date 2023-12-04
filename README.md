@@ -89,3 +89,45 @@ three values.
 The result of the program is the sum of the power of all games.
 
 [Link](https://adventofcode.com/2023/day/2)
+
+## Advent of Code: Day 3
+
+Determine whether a numeric encoded within text is "adjacent"
+to a symbol, not including '.'. For example:
+```
+.....
+.456.
+.....
+```
+These would be considered cells adjacent to the number 456 in text.
+
+A valid number is "adjacent" to one or more valid symbols, which is
+any non-numerical character other than '.' and the result of the
+program is the sum of these valid numbers.
+
+[Link](https://adventofcode.com/2023/day/3)
+
+## Advent of Code: Day 3 - Part 2
+
+The program needs to determine the values of "gear ratios"
+encoded within a schematic. A "gear part" is encoded by any string
+of digits "adjacent" to an asterisk "\*", and a valid gear is given
+by an asterisk adjacent to two digit strings. For example:
+```
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+```
+
+This schematic contains two gears: (467, 35) and (755, 589). The
+gear ratio is the product of these two numbers. The output of the
+program will be the sum of all gear ratios.
+
+[Link](https://adventofcode.com/2023/day/3)

@@ -2,7 +2,7 @@
  *
  * The program needs to determine the values of "gear ratios"
  * encoded within a schematic. A "gear part" is encoded by any string
- * of digits "adjacent" to an asterisk "*", and a valid gear is given
+ * of digits "adjacent" to an asterisk "\*", and a valid gear is given
  * by an asterisk adjacent to two digit strings. For example:
  * ```
  * 467..114..
