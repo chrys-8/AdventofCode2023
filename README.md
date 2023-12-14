@@ -1,5 +1,7 @@
 # Advent of Code 2023
 
+I’m doing Advent of Code 2023 in C++!
+
 ## Advent of Code 2023, Day 1
 
 Sum of calibration values encoded within text
