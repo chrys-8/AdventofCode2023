@@ -5,6 +5,8 @@
 #include <iostream>
 #include <string>
 
+#include <fmt/core.h>
+
 static constexpr const char * INPUT_FILE = "ex.txt";
 
 std::basic_istream<char>& streamGetLine(
@@ -41,7 +43,7 @@ int main()
 
 	if (!fInput)
 	{
-		std::cout << "Unable to read input file\n";
+    fmt::print("Unable to read input file{}\n", INPUT_FILE);
 		return -1;
 	}
 

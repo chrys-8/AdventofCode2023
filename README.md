@@ -2,6 +2,8 @@
 
 I’m doing Advent of Code 2023 in C++!
 
+Compile with fmt and C++23!
+
 ## Advent of Code 2023, Day 1
 
 Sum of calibration values encoded within text
