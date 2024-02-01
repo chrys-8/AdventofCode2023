@@ -10,42 +10,42 @@
 static constexpr const char * INPUT_FILE = "ex.txt";
 
 std::basic_istream<char>& streamGetLine(
-		std::basic_istream<char>& stream,
-		std::string *str,
-		char delim = '\n')
+    std::basic_istream<char>& stream,
+    std::string *str,
+    char delim = '\n')
 {
-	str->erase();
-	for (char c{}; stream.get(c); )
-	{
-		if (c == delim)
-			break;
+  str->erase();
+  for (char c{}; stream.get(c); )
+  {
+    if (c == delim)
+      break;
 
-		*(str) += c;
-	}
+    *(str) += c;
+  }
 
-	return stream;
+  return stream;
 }
 
 std::basic_istream<char>& streamNextLine(
-		std::basic_istream<char>& stream,
-		char delim = '\n')
+    std::basic_istream<char>& stream,
+    char delim = '\n')
 {
-	for (char c{}; stream.get(c); )
-		if (c == delim)
-			break;
+  for (char c{}; stream.get(c); )
+    if (c == delim)
+      break;
 
-	return stream;
+  return stream;
 }
 
 int main()
 {
-	std::ifstream fInput(INPUT_FILE);
+  std::ifstream file_input(INPUT_FILE);
 
-	if (!fInput)
-	{
+  if (!file_input)
+  {
     fmt::print("Unable to read input file{}\n", INPUT_FILE);
-		return -1;
-	}
+    return -1;
+  }
 
-	return 0;
+  return 0;
 }
