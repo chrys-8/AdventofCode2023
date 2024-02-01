@@ -2,7 +2,6 @@
  */
 
 #include <fstream>
-#include <iostream>
 #include <string>
 
 #include <fmt/core.h>
@@ -11,9 +10,8 @@ static constexpr const char * INPUT_FILE = "ex.txt";
 
 std::basic_istream<char>& streamGetLine(
     std::basic_istream<char>& stream,
-    std::string *str,
-    char delim = '\n')
-{
+    std::string& str,
+    char delim = '\n') {
   str->erase();
   for (char c{}; stream.get(c); )
   {
@@ -28,8 +26,7 @@ std::basic_istream<char>& streamGetLine(
 
 std::basic_istream<char>& streamNextLine(
     std::basic_istream<char>& stream,
-    char delim = '\n')
-{
+    char delim = '\n') {
   for (char c{}; stream.get(c); )
     if (c == delim)
       break;
@@ -37,8 +34,7 @@ std::basic_istream<char>& streamNextLine(
   return stream;
 }
 
-int main()
-{
+int main() {
   std::ifstream file_input(INPUT_FILE);
 
   if (!file_input)
