@@ -1,5 +1,7 @@
 # Advent of Code 2023
 
+This repository has been archived. See commit [a6b2b42](https://github.com/chrys-8/AdventofCode2023/commit/a6b2b42f74e32f9bf8dda51f6d9e623a2ad583f2) for more information.
+
 I’m doing Advent of Code 2023 in C++!
 
 Compile with fmt and C++23!
